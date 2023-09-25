@@ -1,0 +1,222 @@
+@media only screen and (max-width: 1000px) {
+    main {
+        height: 90vh;
+    }
+    .home-intro h1{
+        font-size: 1.5rem;
+    }
+    .home-intro p {
+        font-size: 0.8rem;
+    }
+    .btn {
+        font-size: 1rem;
+    }
+    .password{
+        margin-top: 8vh;
+    }
+    .login-btn{
+        margin-top: 7vh;
+    }
+    .google-login{
+        margin-top: 5vh;
+    }
+    .grad-text{
+        width: 25vw;
+    }
+    .google-login{
+        height: 8vh;
+        width: 35vw;
+        display: flex;
+        justify-content: space-evenly;
+    }
+    .acc-actions {
+        height: 70vh;
+        padding: 0;
+    }
+    .user-details h1 {
+        font-size: 1.2rem;
+    }
+    .user-details h2 {
+        font-size: 1rem;
+    }
+    .email, .password {
+        width: 30vw;
+    }
+}
+@media only screen and (max-width:700px) {
+    main {
+        height: 71vh;
+    }
+    .bank-body{
+        display: flex;
+        flex-direction: column;
+        margin-top: 4vh;
+        height: 110vh;
+    }
+    .bank-img {
+        border-radius: 32px;
+    }
+    .home-left{
+        width: 80vw;
+        height: 75vh;
+        justify-content: space-evenly;
+        border-radius: 32px;
+    }
+    .home-intro {
+        width: 40vw;
+    }
+    .bank-img{
+        height: 30vh;
+    }
+    .home-right{
+        width: 90vw;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+    .login-btn{
+        width: 20vw;
+    }
+    .login-main{
+        height: 90vh;
+    }
+    .user-details{
+        border-radius: 32px;
+        width: 80vw;
+        height: 70vh;
+    }
+    .acc-actions{
+        width: 100vw;
+        gap: 1vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+    .logout-btn{
+        height: 10vh;
+        width: 15vw;
+    }
+}
+@media only screen and (max-width:500px){
+    .btn{
+        height: 12vh;
+        width: 30vw;
+        border-radius: 15px;
+    }
+    .hide{
+        display: none;
+    }
+    .user {
+        border-left: 0;
+    }
+    .home-left{
+        display: flex;
+        flex-direction: column;
+        height: 70vh;
+    }
+    .bank-img{
+        margin-top: 1vh;
+    }
+    .home-intro{
+        width: 80vw;
+    }
+    .home-intro p {
+        margin: 0 5vw;
+    }
+    .bank-body{
+        height: 95vh;
+        margin-top: 1vh;
+    }
+    .home-right{
+        justify-content: center;
+        height: 20vh;
+        width: 20vw;
+        gap: 5vw;
+    }
+    .email, .password {
+        width: 50vw;
+        margin-bottom: 0px;
+        margin-top: 2vh;
+    }
+    .login-btn{
+        height: 8vh;
+        width: 20vw;
+        margin: 0;
+    }
+    .login-main{
+        margin-top: 5vh;
+        height: 73vh;
+        justify-content: space-evenly;
+    }
+    .google-login{
+        width: 70vw;
+        margin: 0;
+    }
+    .google {
+        width: 60vw;
+    }
+    .google span{
+        width: 70vw;
+    }
+    .user-details{
+        margin-top: 5vh;
+        display: flex;
+        flex-direction: column;
+    }
+    .user-img{
+        height: 10vh;
+    }
+    .logout-btn{
+        width: 30vw;
+        height: 5vh;
+        margin-bottom: 2vh;
+    }
+    .acc-actions{
+        display: flex;
+        flex-direction: column;
+        margin-top: 2vh;
+    }
+    .footer {
+        margin-top: 0;
+    }
+}
+
+@media only screen and (max-width: 350px) {
+    .home-left h1 {
+        font-size: 1.2rem;
+    }
+    .home-left p {
+        font-size: 0.6rem;
+    }
+    .btn {
+        width: 40vw;
+    }
+    .footer h1{
+        font-size: 0.8rem;
+    }
+    .login-main {
+        height: 73vh;
+    }
+    .login-main h1 {
+        font-size: 1.2rem;
+    }
+    .login-btn {
+        width: 30vw;
+    }
+    .google {
+        height: 10vh;
+    }
+    .google span {
+        font-size: 0.8rem;
+    }
+    .r-signup {
+        margin: 2vw;
+    }
+    .logout-btn {
+        width: 30vw;
+        margin-bottom: 5vh;
+    }
+    .user-details {
+        width: 90vw;
+    }
+}

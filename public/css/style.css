@@ -1,0 +1,219 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Pacifico&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    text-decoration: none;
+    border-style: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+nav {
+    justify-content: space-between;
+    height: 12vh;
+}
+main {
+    flex-direction: column;
+    justify-content: center;
+    height: 75vh;
+    width: 100%;
+}
+a {
+    text-decoration: none;
+}
+.grad_text {
+    background: linear-gradient(to right, #0eb1a3, #21debb, #d2ece7);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+}
+.grad-text-blue {
+    background: linear-gradient(to right, #8017e3, #21debb, #44a4f4);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+}
+.center {
+    display: flex;
+    align-items: center;
+}
+.left-nav {
+    margin-left: 3vw;
+}
+.left-nav h2{
+    font-family: 'Pacifico', cursive;
+}
+.right-nav {
+    margin-right: 3vw;
+    gap: 2vw;
+}
+.nav-img {
+    height: 10vh;
+    margin-right: 2vw;
+}
+.nav-link {
+    font-size: 1.2rem;
+    border-radius: 10px;
+}
+.nav-link:hover {
+    box-shadow: 5px 5px 50px 5px rgba(183, 112, 211);
+    transition: 1s;
+}
+.bank-body {
+    flex-direction: row;
+}
+.home-left {
+    height: 70vh;
+    width: 70vw;
+    border-radius: 0 90px 90px 0;
+    background: linear-gradient(-45deg, rgb(150, 81, 241), rgb(179, 132, 236), rgb(156, 243, 227), rgb(233, 184, 255));
+    flex-direction: row;
+    justify-content: space-evenly;
+    animation: fadeInLeft 2s;
+}
+.bank-img {
+    height: 50vh;
+    border-radius: 64px;
+}
+.home-intro{
+    width: 25vw;
+    animation: fadeInUp 2s;
+    line-height: 2;
+    font-weight: 600;
+}
+.home-intro h1 {
+    font-family: 'Pacifico', cursive;
+}
+.home-intro p{
+    text-align: left;
+    margin: 5vh 0;
+}
+.btn {
+    height: 20vh;
+    width: 25vw;
+    background: linear-gradient(-45deg, rgb(150, 81, 241), rgb(179, 132, 236), rgb(156, 243, 227), rgb(233, 184, 255));
+    border-radius: 32px;
+    margin: 5vh 0;
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: rgb(234, 231, 231);
+    font-family: 'Pacifico', cursive;
+}
+.btn:hover {
+    border: 5px solid rgb(144, 0, 255);
+    background: linear-gradient(-45deg, rgb(179, 132, 236), rgb(156, 243, 227), rgb(150, 81, 241), rgb(233, 184, 255));
+    animation: pulse 1s;
+}
+.home-right {
+    height: 70vh;
+    width: 30vw;
+    flex-direction: column;
+    justify-content: center;
+}
+.label-left {
+    text-align: left;
+}
+.login-main {
+    justify-content: space-evenly;
+}
+.login-main hr {
+    width: 25vw;
+    margin-bottom: 0;
+}
+.email {
+    margin-top: 5vh;
+    height: 10vh;
+    width: 20vw;
+    display: flex;
+    flex-direction: column;
+}
+.password {
+    height: 10vh;
+    width: 20vw;
+    display: flex;
+    flex-direction: column;
+}
+.login-btn {
+    height: 6vh;
+    width: 8vw;
+    border-radius: 64px;
+    background-color: rgb(38, 63, 220);
+    border-style: none;
+    color: aliceblue;
+    transition: 1s;
+}
+.login-btn:hover {
+    background-color: rgb(255, 255, 255);
+    border: 2px solid rgb(38, 63, 220);
+    color: black;
+}
+.google-login {
+    height: 5vh;
+    width: 20vw;
+    border: 2px solid black;
+    border-radius: 64px;
+}
+.google-login:hover {
+    background-color: rgb(65, 65, 65);
+    transition: 1s ease-in-out;
+    animation: pulse 1s;
+}
+.google {
+    padding: 0 3vw;
+    gap: 5vh;
+    font-size: 1rem;
+    font-weight: 600;
+}
+.user-details {
+    height: 60vh;
+    width: 60vw;
+    border: 2px solid black;
+    border-radius: 0 64px 64px 0;
+    justify-content: space-evenly;
+    background: linear-gradient(-45deg, rgb(179, 132, 236), rgb(156, 243, 227), rgb(150, 81, 241), rgb(233, 184, 255));
+    animation: fadeInLeft 2s;
+}
+.user {
+    border-left: 2px solid rgb(92, 135, 244);
+    padding-left: 4vw;
+}
+.user-name {
+    font-family: 'Pacifico', cursive;
+}
+.user-img {
+    border-radius: 64px;
+}
+.acc-actions {
+    width: 40vw;
+    animation: zoomIn 2s;
+    flex-direction: column;
+    gap: 5vh;
+}
+.logout-btn {
+    height: 6vh;
+    width: 8vw;
+    border-radius: 32px;
+    background-color: rgb(38, 63, 220);
+    border-style: none;
+    color: aliceblue;
+    transition: 1s;
+}
+.logout-btn:hover {
+    background-color: rgb(255, 255, 255);
+    border: 2px solid rgb(38, 63, 220);
+    color: black;
+}
+.footer {
+    margin-top: 3vh;
+    background-color: rgb(70, 70, 70);
+    height: 10vh;
+    color: aliceblue;
+    justify-content: space-evenly;
+}
+.footer h1 {
+    font-size: 1rem;
+}
+.social {
+    margin: 1vh 0;
+    gap: 2vw;
+}

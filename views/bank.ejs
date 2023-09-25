@@ -1,0 +1,45 @@
+<%- include("partials/header") %>
+    <main class="center bank-body">
+        <div class="user-details center">
+            <img src="<%= user.picture %>" alt="user-picture" class="user-img">
+            <div class="user">
+                <h1 class="user-name">Welcome <span class="grad-text-blue"><%= user.name %></span>,</h1>
+                <hr>
+                <h2 class="mb-3 mt-3"> Account No: <%= user.googleId %> </h2>
+                <h2 class="user-bal"> <i class="fa-solid fa-indian-rupee-sign fa-lg"></i>
+                    <%= user.balance %>
+                </h2>
+            </div>
+        </div>
+        <div class="acc-actions center">
+            <h1>Account Actions</h1>
+            <div class="add-money mb-3">
+                <label for="add-money" class="form-label">Add Money</label>
+                <form action="/addMoney" method="post">
+                    <div class="input-group">
+                        <div class="input-group-text"><i class="fa-solid fa-indian-rupee-sign fa-lg"></i></div>
+                        <input type="number" name="moneyAdd" id="" class="form-control">
+                        <button type="submit" class="input-group-text"><i class="fa-solid fa-plus fa-lg"></i></button>
+                    </div>
+                </form>
+            </div>
+            <div class="send-money mb-3">
+                <label for="send-money" class="form-label">Send Money</label>
+                <form action="/sendMoney" method="post">
+                    <div class="input-group">
+                        <div class="input-group-text"><i class="fa-solid fa-user"></i></div>
+                        <input type="number" name="accNumber" id="" class="form-control">
+                    </div>
+                    <div class="input-group">
+                        <div class="input-group-text"><i class="fa-solid fa-indian-rupee-sign fa-lg"></i></div>
+                        <input type="number" name="moneySend" id="" class="form-control">
+                        <% if (user.balance != 0) { %>
+                        <button type="submit" class="input-group-text"><i class="fa-solid fa-arrow-up fa-lg"></i></button>
+                        <% } %>
+                    </div>
+                </form>
+            </div>
+            <a href="/logout"><button class="logout-btn">Log Out</button></a>
+        </div>  
+    </main>
+    <%- include("partials/footer") %>
